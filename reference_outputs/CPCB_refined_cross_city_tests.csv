@@ -1,0 +1,5 @@
+Metric,Cities_positive,Cities_zero,Mean_city_gain_pct,Wilcoxon_stat,Wilcoxon_one_sided_p
+Transition_RMSE_gain_mean_pct,6,1,6.100504516551245,21.0,0.015625
+Transition_MAE_gain_mean_pct,6,1,5.215392161205783,21.0,0.015625
+Boundary20_RMSE_gain_mean_pct,7,0,4.12994349887619,28.0,0.0078125
+Boundary20_MAE_gain_mean_pct,6,0,3.6997866147092973,24.0,0.0546875

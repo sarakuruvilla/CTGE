@@ -1,0 +1,4 @@
+Comparison,Cities_positive,Cities_Holm_significant,Cities_bootstrap_CI_positive,Mean_city_gain_pct
+C1_vs_C2,7,0,6,3.687580524106071
+C1_vs_C3,7,2,6,5.213419375404476
+C2_vs_C3,7,0,1,1.5970701510821095

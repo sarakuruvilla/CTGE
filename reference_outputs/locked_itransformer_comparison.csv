@@ -1,0 +1,2 @@
+Comparison,Cities_CTGE_better,Mean_RMSE_reduction_pct,Wilcoxon_W,Wilcoxon_p,DM_HAC_Holm_significant_cities
+CTGE vs iTransformer,7/7,26.0,28,0.0078125,7/7

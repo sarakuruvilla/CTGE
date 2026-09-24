@@ -1,0 +1,9 @@
+Model,Average_RMSE_Rank,Nemenyi_vs_CTGE_significant
+CTGE,1.00,
+Random Forest,3.57,No
+HistGradientBoosting,3.86,No
+LightGBM,3.86,No
+Ridge,4.29,No
+XGBoost,4.71,No
+iTransformer,7.00,Yes
+Persistence,7.71,Yes

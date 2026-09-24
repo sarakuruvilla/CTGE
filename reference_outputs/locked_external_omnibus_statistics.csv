@@ -1,0 +1,4 @@
+Test,Statistic,p_value_or_CD,Interpretation
+Friedman,35.71,8.2e-6,Overall model differences significant
+Quade,8.15,3.0e-6,Overall model differences significant
+Nemenyi,,3.97,CD at alpha=0.05; CTGE significant vs iTransformer and Persistence

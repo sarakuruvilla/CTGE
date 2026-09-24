@@ -79,8 +79,10 @@ CTGE_AQI_Reproducibility_Repository/
 │   ├── data.py
 │   ├── features.py
 │   ├── cpdm.py
+│   ├── cpdm2.py
 │   ├── erdm.py
 │   ├── models.py
+│   ├── models2.py
 │   ├── afsa.py
 │   ├── itransformer.py
 │   ├── stats.py
@@ -93,7 +95,9 @@ CTGE_AQI_Reproducibility_Repository/
 │   ├── 03_download_era5_cds.py
 │   ├── 03b_download_era5_openmeteo.py
 │   ├── 04_match_integrate_era5.py
+│   ├── 04_match_integrate_era5_2.py
 │   ├── 05_build_cpdm_erdm.py
+│   ├── 05_build_cpdm_erdm2.py
 │   ├── 06_afsa_reliability.py
 │   ├── 07_run_seven_seed_ctge.py
 │   ├── 08_cpcb_analysis.py

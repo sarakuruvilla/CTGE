@@ -1,0 +1,26 @@
+project: CTGE-AQI
+cities: [Bengaluru, Hyderabad, Chennai, Delhi, Jaipur, Lucknow, Gurugram]
+forecast_seeds: [11, 22, 33, 44, 55, 66, 77]
+afsa_seeds: [101, 202, 303, 404, 505]
+periods:
+  development_train: [2018-01-01, 2018-12-31]
+  development_validation: [2019-01-01, 2019-12-31]
+forecast_horizon_days: 1
+probe:
+  n_estimators: 300
+  max_features: 0.7
+  min_samples_leaf: 2
+statistics:
+  hac_lag_days: 7
+  bootstrap_block_days: 7
+  bootstrap_reps: 5000
+cpcb:
+  thresholds: [50, 100, 200, 300, 400]
+  boundary_width: 20
+  boundary_sensitivity: [10, 15, 20, 25, 30]
+loco:
+  shrinkage_candidates: [0.05, 0.10, 0.20, 0.35, 0.50, 0.75, 1.00]
+  frozen_scale: 0.35
+era5:
+  enabled_in_locked_core: false
+  note: "ERA5 scripts are included for audit/reproducibility of climate-integration work; the locked seven-city core uses only consistently available pollutant/AQI/hourly/event inputs."

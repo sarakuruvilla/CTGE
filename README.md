@@ -1,8 +1,8 @@
 # CTGE-AQI reproducibility repository
 
-This repository contains the reviewer-facing code and frozen analysis artifacts for the manuscript's **Context-aware Temporal Graph-Enhanced (CTGE) representation framework for one-day-ahead AQI forecasting**.
+This repository contains the  code and frozen analysis artifacts for the manuscript's **Context-aware Temporal Graph-Enhanced (CTGE) representation framework for one-day-ahead AQI forecasting**.
 
-The repository is organized to answer the reproducibility request directly: it contains the Rohan Rao/CPCB data-preparation path, optional ERA5 acquisition and matching, CPDM/ERDM construction, AFSA reliability calibration, seven-seed CTGE evaluation, CPCB operational analysis, dependence-aware statistical testing, the same-data external comparator suite (including iTransformer), nested leave-one-city-out (LOCO) transfer evaluation, and figure/table generation.
+The repository is organized like this: it contains the Rohan Rao/CPCB data-preparation path, optional ERA5 acquisition and matching, CPDM/ERDM construction, AFSA reliability calibration, seven-seed CTGE evaluation, CPCB operational analysis, dependence-aware statistical testing, the same-data external comparator suite (including iTransformer), nested leave-one-city-out (LOCO) transfer evaluation, and figure/table generation.
 
 ## 1. Locked manuscript architecture
 
@@ -45,11 +45,10 @@ The seven cities used in the manuscript are:
 
 `Bengaluru, Hyderabad, Chennai, Delhi, Jaipur, Lucknow, Gurugram`.
 
-Large raw files are intentionally not redistributed in this repository. See `data/README.md`.
 
 ## 3. ERA5 audit trail
 
-Two ERA5 acquisition routes are provided because the editor specifically requested the acquisition/matching/integration workflow:
+Two ERA5 acquisition routes are provided which shows the acquisition/matching/integration workflow:
 
 - `scripts/03_download_era5_cds.py` — official Copernicus CDS route.
 - `scripts/03b_download_era5_openmeteo.py` — historical ERA5 API fallback used during development.
@@ -113,7 +112,7 @@ CTGE_AQI_Reproducibility_Repository/
 └── outputs/
 ```
 
-`MANIFEST.md` maps every editor-requested reproducibility item to the exact file implementing it.
+
 
 ## 5. Installation
 
@@ -293,7 +292,7 @@ The locked manuscript reference uses a transfer scale of `0.35`, selected from s
 - LOCO table;
 - component statistical table.
 
-All figure/table source data remain as CSVs in `outputs/` for manual reviewer inspection.
+
 
 ## 16. Frozen reference outputs
 
@@ -322,9 +321,7 @@ The 2019 C1/C2/C3 component-ladder significance calculations are **development/p
 
 The external comparator, CPCB, AFSA-control, and LOCO scripts are separated so a reviewer can inspect each claim and its leakage controls independently.
 
-## 18. Reviewer quick verification
-
-A reviewer who does not want to retrain the neural comparator can still inspect the complete locked calculations in `reference_outputs/` and rerun the statistical/figure scripts on the supplied CSV outputs.
+## 18. Quick verification
 
 For a full rerun:
 
@@ -344,18 +341,3 @@ python scripts/08_cpcb_analysis.py
 python scripts/09_statistical_tests.py
 python scripts/12_generate_tables_figures.py
 ```
-
-## 19. Public-repository checklist
-
-Before sending the URL to the editor, verify that the public repository contains:
-
-- this `README.md`;
-- `MANIFEST.md`;
-- all `ctge/` modules and `scripts/` files;
-- `configs/`;
-- `reference_outputs/`;
-- `requirements.txt` / `environment.yml`;
-- `data/README.md`;
-- no private credentials (`.cdsapirc`, Kaggle token, email, API key, or local absolute paths).
-
-Then test the repository URL in a private/incognito browser window to make sure it is actually public and does not return 404.
